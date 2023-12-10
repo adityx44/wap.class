@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class student
+{
+    public:
+    char name[30];
+    int status;
+
+};
+int main()
+{
+    student stud[10];
+    int pass=0,fail=0;
+    for(int i=0;i<10;i++)
+    {
+        cout<<"ENter name and status\n";
+        cin>>stud[i].name>>stud[i].status;
+        if(stud[i].status==1)
+        {
+            pass++;
+        }
+        else
+        {
+            fail++;
+        }
+    }
+    if(pass>8)
+    {
+        cout<<"Scholarship";
+    }
+    return 0;
+    
+}
